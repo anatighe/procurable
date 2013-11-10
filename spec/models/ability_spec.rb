@@ -28,12 +28,4 @@ describe "permissions" do
     ability = Ability.new(other_user)
     ability.should_not be_able_to(:create, item)
   end
-
 end
-
-# describe 'permissions for users and stores' do
-#   subject { Ability.new(user) }
-#   let(:user) { User.create!(:email => "email@email.com", :password => "password") }
-#   let(:store) { user.stores.create! }
-#   it { should be_able_to(:destroy, store) }
-# end
